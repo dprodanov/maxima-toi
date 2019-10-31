@@ -1,0 +1,6 @@
+(load "toi.lisp")
+(load "toi-util.lisp")
+(load "bessel_c-integral-table.lisp")
+(load "bessel-integral-template.lisp")
+(toi-write-file "toi-bessel-integrals.lisp" (toi-generate-bessel))
+($quit)

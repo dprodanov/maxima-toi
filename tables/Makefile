@@ -22,7 +22,7 @@ toi-integral-table.tmp: $(INTEGRALS)
 toi-bessel-integrals.lisp: ../toi.lisp toi-util.lisp \
 	bessel_c-integral-table.lisp bessel-integral-template.lisp
 	(echo "to_lisp();";\
-	echo '(load "../toi.lisp")';\
+	echo '(load "toi.lisp")';\
 	echo '(load "toi-util.lisp")';\
 	echo '(load "bessel_c-integral-table.lisp")';\
 	echo '(load "bessel-integral-template.lisp")';\
@@ -38,14 +38,14 @@ definite-01.tmp: N=1399
 
 toi-integral-table.lisp: toi-integral-table.tmp ../toi.lisp toi-util.lisp
 	(echo "to_lisp();";\
-	echo '(load "../toi.lisp")';\
+	echo '(load "toi.lisp")';\
 	echo '(load "toi-util.lisp")';\
 	echo '(toi-filter-file "$<" "$@" $(N))';\
 	echo '($$quit)') | $(MAXIMA)
 
 definite-%.tmp: definite-%.lisp ../toi.lisp toi-util.lisp
 	(echo "to_lisp();";\
-	echo '(load "../toi.lisp")';\
+	echo '(load "toi.lisp")';\
 	echo '(load "toi-util.lisp")';\
 	echo '(toi-filter-file "$<" "$@" $(N))';\
 	echo '($$quit)') | $(MAXIMA)

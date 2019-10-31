@@ -1,0 +1,32 @@
+(echo "to_lisp();";\
+echo '(load "../toi.lisp")';\
+echo '(load "toi-util.lisp")';\
+echo '(load "bessel_c-integral-table.lisp")';\
+echo '(load "bessel-integral-template.lisp")';\
+echo '(toi-write-file "toi-bessel-integrals.lisp" (toi-generate-bessel))';\
+echo '($quit)')  | maxima
+Makefile:24: recipe for target 'toi-bessel-integrals.lisp' failed
+(echo "to_lisp();";\
+echo '(load "../toi.lisp")';\
+echo '(load "toi-util.lisp")';\
+echo '(load "bessel_c-integral-table.lisp")';\
+echo '(load "bessel-integral-template.lisp")';\
+echo '(toi-write-file "toi-bessel-integrals.lisp" (toi-generate-bessel))';\
+echo '($quit)')  | maxima
+Makefile:24: recipe for target 'toi-bessel-integrals.lisp' failed
+(echo "to_lisp();";\
+echo '(load "toi.lisp")';\
+echo '(load "toi-util.lisp")';\
+echo '(load "bessel_c-integral-table.lisp")';\
+echo '(load "bessel-integral-template.lisp")';\
+echo '(toi-write-file "toi-bessel-integrals.lisp" (toi-generate-bessel))';\
+echo '($quit)')  | maxima
+Makefile:24: recipe for target 'toi-bessel-integrals.lisp' failed
+(echo "to_lisp();";\
+echo '(load "toi.lisp")';\
+echo '(load "toi-util.lisp")';\
+echo '(load "bessel_c-integral-table.lisp")';\
+echo '(load "bessel-integral-template.lisp")';\
+echo '(toi-write-file "toi-bessel-integrals.lisp" (toi-generate-bessel))';\
+echo '($quit)')  | maxima
+Makefile:24: recipe for target 'toi-bessel-integrals.lisp' failed

@@ -1,0 +1,5 @@
+Maxima 5.42.2 http://maxima.sourceforge.net
+using Lisp SBCL 1.4.2
+Distributed under the GNU Public License. See the file COPYING.
+Dedicated to the memory of William Schelter.
+The function bug_report() provides bug reporting information.

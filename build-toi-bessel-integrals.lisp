@@ -3,4 +3,3 @@
 (load "tables/bessel_c-integral-table.lisp")
 (load "tables/bessel-integral-template.lisp")
 (toi-write-file "toi-bessel-integrals.lisp" (toi-generate-bessel))
-($quit)
